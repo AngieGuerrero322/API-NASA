@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORADOR DEL ESPACIO | NASA API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PROYECTO<br><span>ESPACIO</span></h1>
+        <p>🚀Explorador astronomico - NASA👨🏻‍🚀</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="search-section box">
+            <label for="fecha-selector">Viajar al pasado👀:</label>
+            <input type="date" id="fecha-selector"> 
+            <button id="btn-buscar">Explorar🔎</button>
+        </section>
+
+        <section id="apod-content" class="apod-display">
+            <h2 id="apod-titulo">🤖Iniciando sistemas...</h2>
+            <p id="apod-fecha" class="fecha-texto"></p>
+            
+            <div id="media-container" class="media-frame">
+                </div>
+
+            <div class="description-card box">
+                <h4>Bitácora Científica</h4>
+                <p id="apod-descripcion">Esperando datos de la base espacial...</p>
+                
+                <button id="btn-favorito" class="btn-save">Guardar en Favoritos🫡🚀</button>
+            </div>
+        </section>
+
+        <aside class="favorites-section box">
+            <h3>Eureka! 🧠</h3>
+            <ul id="lista-favoritos">
+                </ul>
+        </aside>
+
+    </main>
+
+    <script type="module" src="function.js"></script>
+</body>
+</html>
