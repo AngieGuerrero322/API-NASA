@@ -1,5 +1,5 @@
 // Guarda la clave de API de la NASA (actualmente es la clave de demostración "DEMO_KEY")
-const API_KEY = "DEMO_KEY";
+const API_KEY = "fzEb2JB6AuM9DH7ZQ3pFuxCHArJEUCAeeb3WPPgv";
 // Guarda la URL base de la API de Astronomy Picture of the Day (APOD) de la NASA
 const BASE_URL = "https://api.nasa.gov/planetary/apod";
 
