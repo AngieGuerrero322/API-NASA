@@ -11,40 +11,41 @@
 
     <header>
         <h1>PROYECTO<br><span>ESPACIO</span></h1>
-        <p>🚀Explorador astronomico - NASA👨🏻‍🚀</p>
+        <p>🚀 Explorador astronómico - NASA 👨🏻‍🚀</p>
     </header>
 
     <main class="container">
         
+        <!-- Sección de búsqueda -->
         <section class="search-section box">
-            <label for="fecha-selector">Viajar al pasado👀:</label>
-            <input type="date" id="fecha-selector"> 
-            <button id="btn-buscar">Explorar🔎</button>
+            <label for="date-input">Viajar al pasado 👀:</label>
+            <input type="date" id="date-input">
+            <button id="fetch-btn">Explorar 🔎</button>
         </section>
 
+        <!-- Contenido principal del APOD -->
         <section id="apod-content" class="apod-display">
-            <h2 id="apod-titulo">🤖Iniciando sistemas...</h2>
-            <p id="apod-fecha" class="fecha-texto"></p>
+            <h2 id="title">🤖 Iniciando sistemas...</h2>
+            <p id="date-display" class="fecha-texto"></p>
             
-            <div id="media-container" class="media-frame">
-                </div>
+            <div id="media-container" class="media-frame"></div>
 
             <div class="description-card box">
                 <h4>Bitácora Científica</h4>
-                <p id="apod-descripcion">Esperando datos de la base espacial...</p>
+                <p id="explanation">Esperando datos de la base espacial...</p>
                 
-                <button id="btn-favorito" class="btn-save">Guardar en Favoritos🫡🚀</button>
+                <button id="favorite-btn" class="btn-save">Guardar en Favoritos 🫡🚀</button>
             </div>
         </section>
 
+        <!-- Sidebar de favoritos -->
         <aside class="favorites-section box">
             <h3>Eureka! 🧠</h3>
-            <ul id="lista-favoritos">
-                </ul>
+            <ul id="favorites-list"></ul>
         </aside>
 
     </main>
 
-    <script type="module" src="function.js"></script>
+    <script src="apiNasa.js"></script>
 </body>
 </html>
